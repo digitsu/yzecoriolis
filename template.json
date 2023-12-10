@@ -305,6 +305,7 @@
       },
       "explosive": false,
       "blastRadius": "",
+      "blastDamage": 0,
       "blastPower": 0,
       "bonus": 0,
       "damage": 0,

@@ -139,6 +139,7 @@
   "YZECORIOLIS.Automatic": "Automatique",
   "YZECORIOLIS.Explosive": "Explosif",
   "YZECORIOLIS.Explosives": "Explosifs",
+  "YZECORIOLIS.BlastDamage": "Blast",
   "YZECORIOLIS.BlastPower": "Puissance",
   "YZECORIOLIS.BlastRadius": "Rayon",
   "YZECORIOLIS.Special": "Trait",
