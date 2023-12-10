@@ -516,6 +516,7 @@ export class yzecoriolisActorSheet extends ActorSheet {
       pushed: false,
       isAutomatic: item?.automatic,
       isExplosive: item?.explosive,
+      blastDamage: item?.blastDamage,
       blastPower: item?.blastPower,
       blastRadius: item?.blastRadius,
       damage: item?.damage,
@@ -523,6 +524,7 @@ export class yzecoriolisActorSheet extends ActorSheet {
       range: item?.range,
       crit: item?.crit?.numericValue,
       critText: item?.crit?.customValue,
+      armorPenetration: item?.armorPenetration,
       features: item?.special ? Object.values(item.special).join(", ") : "",
     };
     const chatOptions = this.actor._prepareChatRollOptions(

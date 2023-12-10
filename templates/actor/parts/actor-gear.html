@@ -58,9 +58,9 @@
             <li class="gear-category-header flexrow">
                 <div class="gear-category-name first">{{localize "YZECORIOLIS.Weapons"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Bonus"}}</div>
-                <div class="gear-category-name center">{{localize "YZECORIOLIS.Initiative"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Damage"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Crit"}}</div>
+                <div class="gear-category-name center">{{localize "YZECORIOLIS.AP"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Range"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Automatic"}}</div>
                 {{#if owner}}
@@ -92,15 +92,16 @@
                         {{weapon.system.bonus}}
                     </div>
 
-                    <div class="gear-row-data">
-                        {{weapon.system.initiative}}
-                    </div>
+
 
                     <div class="gear-row-data">
                         {{weapon.system.damage}}
                     </div>
                     <div class="gear-row-data">
                         {{getWeaponCritDisplay weapon.system.crit}}
+                    </div>
+                    <div class="gear-row-data">
+                        {{weapon.system.armorPenetration}}
                     </div>
                     <div class="gear-row-data">
                         {{getRangeName weapon.system.range}}
@@ -146,6 +147,7 @@
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Initiative"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Damage"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.Crit"}}</div>
+                <div class="gear-category-name center">{{localize "YZECORIOLIS.BlastDamage}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.BlastPower"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.BlastRadius"}}</div>
                 {{#if owner}}
@@ -177,7 +179,9 @@
                     <div class="gear-row-data">
                         {{explosive.system.damage}}
                     </div>
-
+                    <div class="gear-row-data">
+                        {{explosive.system.blastDamage}}
+                    </div>
                     <div class="gear-row-data">
                         {{getWeaponCritDisplay explosive.system.crit}}
                     </div>
@@ -220,7 +224,7 @@
             <li class="gear-category-header flexrow">
                 <div class="gear-category-name first">{{localize "YZECORIOLIS.Armor"}}</div>
                 <div class="gear-category-name center">{{localize "YZECORIOLIS.ArmorRating"}}</div>
-                <div class="gear-category-name center">{{localize "YZECORIOLIS.ExtraFeatures"}}</div>
+                <!-- <div class="gear-category-name center">{{localize "YZECORIOLIS.ExtraFeatures"}}</div> -->
                 {{#if owner}}
                 <div class="gear-controls">
                     <a class="gear-control-add-widget item-create" title='{{localize "YZECORIOLIS.CreateArmor"}}'
@@ -242,9 +246,9 @@
                     <div class="gear-row-data">
                         {{armor.system.armorRating}}
                     </div>
-                    <div class="gear-row-data">
+<!--                     <div class="gear-row-data">
                         {{armor.system.extraFeatures}}
-                    </div>
+                    </div> -->
 
                     <div class="gear-controls">
                         <a class="gear-control-widget item-toggle {{armor.system.toggleClass}}"

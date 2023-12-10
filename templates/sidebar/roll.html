@@ -10,10 +10,12 @@
               <td colspan="2">{{localize "YZECORIOLIS.Damage"}}: {{damage}} {{#if damageText}}({{damageText}}){{/if}}</td>
             </tr>
             <tr>
-              <td colspan="2">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.AP"}}: {{#if_gt armorPenetration 0}}{{armorPenetration}}{{else}}-{{/if_gt}} </td>
             </tr>
             {{#if_eq isExplosive 'true'}}
               <tr>
+                <td>{{localize "YZECORIOLIS.BlastDamage}}: {{blastDamage}}</td>
                 <td>{{localize "YZECORIOLIS.BlastPower"}}: {{blastPower}}</td>
                 <td>{{localize "YZECORIOLIS.BlastRadius"}}: {{blastRadius}}</td>
               </tr>
@@ -63,10 +65,12 @@
               <td colspan="2">{{localize "YZECORIOLIS.Damage"}}: {{damage}} {{#if damageText}}({{damageText}}){{/if}}</td>
             </tr>
             <tr>
-              <td colspan="2">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.AP"}}: {{#if_gt armorPenetration 0}}{{armorPenetration}}{{else}}-{{/if_gt}} </td>
             </tr>
             {{#if_eq isExplosive 'true'}}
               <tr>
+                <td>{{localize "YZECORIOLIS.BlastDamage"}}: {{blastDamage}}</td>
                 <td>{{localize "YZECORIOLIS.BlastPower"}}: {{blastPower}}</td>
                 <td>{{localize "YZECORIOLIS.BlastRadius"}}: {{blastRadius}}</td>
               </tr>
@@ -115,10 +119,12 @@
               <td colspan="2">{{localize "YZECORIOLIS.Damage"}}: {{damage}} {{#if damageText}}({{damageText}}){{/if}}</td>
             </tr>
             <tr>
-              <td colspan="2">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.Crit"}}: {{#if_gt crit 0}}{{crit}}{{else}}-{{/if_gt}} {{#if critText}}({{critText}}){{/if}}</td>
+              <td colspan="1">{{localize "YZECORIOLIS.AP"}}: {{#if_gt armorPenetration 0}}{{armorPenetration}}{{else}}-{{/if_gt}} </td>
             </tr>
             {{#if_eq isExplosive 'true'}}
               <tr>
+                <td>{{localize "YZECORIOLIS.BlastDamage"}}: {{blastDamage}}</td>
                 <td>{{localize "YZECORIOLIS.BlastPower"}}: {{blastPower}}</td>
                 <td>{{localize "YZECORIOLIS.BlastRadius"}}: {{blastRadius}}</td>
               </tr>

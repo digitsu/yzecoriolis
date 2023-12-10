@@ -131,6 +131,7 @@
   "YZECORIOLIS.Restricted": "Restricted",
   "YZECORIOLIS.Bonus": "Bonus",
   "YZECORIOLIS.Initiative": "Initiative",
+  "YZECORIOLIS.AP": "AP",
   "YZECORIOLIS.CritType": "Crit Type",
   "YZECORIOLIS.Crit": "Crit",
   "YZECORIOLIS.Damage": "Damage",
@@ -142,6 +143,7 @@
   "YZECORIOLIS.Automatic": "Automatic",
   "YZECORIOLIS.Explosive": "Explosive",
   "YZECORIOLIS.Explosives": "Explosives",
+  "YZECORIOLIS.BlastDamage": "Blast",
   "YZECORIOLIS.BlastPower": "Power",
   "YZECORIOLIS.BlastRadius": "Radius",
   "YZECORIOLIS.Special": "Special Features",
@@ -157,7 +159,7 @@
   "YZECORIOLIS.FatalInjury": "Fatal",
   "YZECORIOLIS.InjuryTimeLimitRoll": "Time Limit",
   "YZECORIOLIS.InjuryHealTimeRoll": "Heal Time",
-  "YZECORIOLIS.ArmorRating": "Armor Rating",
+  "YZECORIOLIS.ArmorRating": "DMG Reduction",
   "YZECORIOLIS.ExtraFeatures": "Extra Features",
 
   "YZECORIOLIS.AttrStrength": "Strength",
@@ -334,7 +336,7 @@
   "YZECORIOLIS.CritTypeCustom": "Custom Crit",
   "YZECORIOLIS.DamageTypeCustom": "Custom Damage",
 
-  "YZECORIOLIS.CloseRange": "Close",
+  "YZECORIOLIS.CloseRange": "Engaged",
   "YZECORIOLIS.ContactRange": "Contact",
   "YZECORIOLIS.ShortRange": "Short",
   "YZECORIOLIS.MediumRange": "Medium",

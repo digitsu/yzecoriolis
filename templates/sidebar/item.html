@@ -75,10 +75,11 @@
         <p><strong>{{localize "YZECORIOLIS.Weight"}} : </strong>{{ getWeightName item.system.weight}}</p>
         <p><strong>{{localize "YZECORIOLIS.Cost"}} : </strong>{{item.system.cost}} {{localize "YZECORIOLIS.Birr"}}</p>
         <p><strong>{{localize "YZECORIOLIS.Bonus"}}: </strong>{{item.system.bonus}}</p>
-        <p><strong>{{localize "YZECORIOLIS.Initiative"}}: </strong>{{item.system.initiative}}</p>
+        <p><strong>{{localize "YZECORIOLIS.AP"}}: </strong>{{item.system.armorPenetration}}</p>
         <p><strong>{{localize "YZECORIOLIS.Damage"}} : </strong>{{item.system.damage}}</p>
         <p><strong>{{localize "YZECORIOLIS.Crit"}} : </strong>{{getWeaponCritDisplay item.system.crit}}</p>
         {{#if item.system.explosive}}
+            <p><strong>{{localize "YZECORIOLIS.BlastDamage"}} : </strong>{{item.system.blastDamage}}</p>
             <p><strong>{{localize "YZECORIOLIS.BlastPower"}} : </strong>{{item.system.blastPower}}</p>
             <p><strong>{{localize "YZECORIOLIS.BlastRadius"}} : </strong>{{item.system.blastRadius}}</p>
         {{else}}

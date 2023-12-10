@@ -313,7 +313,8 @@
       "range": "",
       "automatic": false,
       "special": {},
-      "melee": false
+      "melee": false,
+      "AP": 0
     },
     "armor": {
       "templates": ["gear"],

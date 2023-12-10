@@ -66,6 +66,7 @@ export class yzecoriolisItem extends Item {
       pushed: false,
       isAutomatic: itemData.automatic,
       isExplosive: itemData.explosive,
+      blastDamage: itemData.blastDamage,
       blastPower: itemData.blastPower,
       blastRadius: itemData.blastRadius,
       damage: itemData.damage,
@@ -73,6 +74,7 @@ export class yzecoriolisItem extends Item {
       range: itemData.range,
       crit: itemData.crit?.numericValue,
       critText: itemData.crit?.customValue,
+      armorPenetration: itemData.armorPenetration ? Number(itemData.armorPenetration) : 0,
       features: itemData.special
         ? Object.values(itemData.special).join(", ")
         : "",

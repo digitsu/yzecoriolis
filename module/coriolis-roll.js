@@ -349,10 +349,12 @@ async function showChatMessage(chatMsgOptions, resultData, roll) {
     automaticRollAmount: parseInt(getRollAutoIgnoOnes(resultData.rollData)) + 1,
     isExplosive: getRollIsExplosive(resultData.rollData),
     bonus: getRollBonus(resultData.rollData),
+    blastDamage: getRollBlastDamage(resultData.rollData),
     blastPower: getRollBlastPower(resultData.rollData),
     blastRadius: getRollBlastRadius(resultData.rollData),
     crit: getRollCrit(resultData.rollData),
     critText: getRollCritText(resultData.rollData),
+    armorPenetration: getRollArmorPenetration(resultData.rollData),
     damage: getRollDmg(resultData.rollData),
     damageText: getRollDmgText(resultData.rollData),
     range: getRollRange(resultData.rollData),
@@ -403,10 +405,12 @@ async function updateChatMessage(
     automaticRollAmount: parseInt(getRollAutoIgnoOnes(resultData.rollData)) + 1,
     isExplosive: getRollIsExplosive(resultData.rollData),
     bonus: getRollBonus(resultData.rollData),
+    blastDamage: getRollBlastDamage(resultData.rollData),
     blastPower: getRollBlastPower(resultData.rollData),
     blastRadius: getRollBlastRadius(resultData.rollData),
     crit: getRollCrit(resultData.rollData),
     critText: getRollCritText(resultData.rollData),
+    armorPenetration: getRollArmorPenetration(resultData.rollData),
     damage: getRollDmg(resultData.rollData),
     damageText: getRollDmgText(resultData.rollData),
     range: getRollRange(resultData.rollData),
@@ -533,6 +537,14 @@ function getRollCrit(rollData) {
 
 function getRollCritText(rollData) {
   return `${rollData.critText}`;
+}
+
+function getRollArmorPenetration(rollData) {
+  return `${rollData.armorPenetration}`;
+}
+
+function getRollBlastDamage(rollData) {
+  return `${rollData.blastDamage}`;
 }
 
 function getRollDmg(rollData) {

@@ -8,14 +8,23 @@
                     <label class="resource-label">{{localize "YZECORIOLIS.Bonus"}}</label>
                     <input type="number" name="system.bonus" value="{{system.bonus}}" data-dtype="Number" />
                 </div>
-                <div class="resource numeric-input flexrow">
+<!--                 <div class="resource numeric-input flexrow">
                     <label class="resource-label">{{localize "YZECORIOLIS.Initiative"}}</label>
                     <input type="number" name="system.initiative" value="{{system.initiative}}" data-dtype="Number" />
-                </div>
+                </div> -->
+
                 <div class="resource numeric-input flexrow">
                     <label class="resource-label">{{localize "YZECORIOLIS.Damage"}}</label>
                     <input type="number" min="0" name="system.damage" value="{{system.damage}}" data-dtype="Number" />
                 </div>
+
+                {{#if system.explosive}}
+                <div class="resource numeric-input flexrow">
+                    <label class="resource-label">{{localize "YZECORIOLIS.BlastDamage"}}</label>
+                    <input type="number" min="0" name="system.blastDamage" value="{{system.blastDamage}}"
+                        data-dtype="Number" />
+                </div>
+                {{/if}}
 
                 <div class="resource numeric-input flexrow">
                     <label class="resource-label">{{localize "YZECORIOLIS.DamageTypeCustom"}}</label>
@@ -33,6 +42,11 @@
                     <label class="resource-label">{{localize "YZECORIOLIS.CritTypeCustom"}}</label>
                     <input type="text" name="system.crit.customValue" value="{{system.crit.customValue}}"
                         data-dtype="String" />
+                </div>
+
+                <div class="resource numeric-input flexrow">
+                    <label class="resource-label">{{localize "YZECORIOLIS.AP"}}</label>
+                    <input type="number" min="0" name="system.armorPenetration" value="{{system.armorPenetration}}" data-dtype="Number" />
                 </div>
 
                  {{#unless system.explosive}}
